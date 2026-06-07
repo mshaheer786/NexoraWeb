@@ -1,0 +1,32 @@
+# NexoraWeb Robots.txt
+# Allow search engines to crawl and index the site
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /*?print=
+
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Specific rules for Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://nexoraweb.com/sitemap.xml
